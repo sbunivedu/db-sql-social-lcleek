@@ -1,1 +1,2 @@
 1. select name from Highschooler, Friend where Highschooler.ID = Friend.ID1 AND Friend.ID2 IN (select ID from Highschooler where name = "Gabriel");
+2. select Highschooler.name, Highschooler.grade from Highschooler where Highschooler.ID NOT IN (select ID1 from Likes) AND Highschooler.ID NOT IN (select ID2 from Likes);
